@@ -67,7 +67,7 @@ def redraw(player, players):
 
 def main():
 	run = True
-	n = network.Network(("0.0.0.0", 4444))
+	n = network.Network(("127.0.0.1", 4444))
 	p = Player(player_x, player_y, 100, 100, (0,255,0))
 
 	data_serialized = '{"rect": (' + str(player_x) + ', ' + str(player_y) + ', 100, 100)}'
